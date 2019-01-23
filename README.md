@@ -7,11 +7,15 @@ Map4D SDK for Web, written in Javascript.
 
 ## Installation
 
-Use [NPM](https://www.npmjs.com).
+1. Download map4dsdk from [here](https://raw.githubusercontent.com/iotlinkadmin/map4d-web-sdk/master/sdk/map4dsdk@0.0.6.js)
 
-```npm
-npm install map4dsdk --save
+2. Add script to your website
+```html
+<script src="[PATH]/map4dsdk@[version].js"></script>
 ```
+
+***Note: SDK script name must contains "map4dsdk@"***
+
 ## Using
 
 1. Initialize map with access key
@@ -31,6 +35,8 @@ npm install map4dsdk --save
         accessKey: "98fd21346d83bee24dc734231f7609c9"
       }
     )
+  //set switch mode Auto for automatically switching between 2D & 3D
+  map.setSwitchMode(map4d.SwitchMode.Auto)
 </script>
 
 </body>

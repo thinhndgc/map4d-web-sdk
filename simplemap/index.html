@@ -20,17 +20,23 @@
 <body>
 <div id="map"></div>
 
-<script src="../sdk/map4dsdk@0.0.5.js"></script>
+<script src="../sdk/map4dsdk@0.0.6.js"></script>
 
 <script>
 	let map = new map4d.Map(document.getElementById("map"),
       {
-        zoom: 13,
-        center: [10.793113, 106.720739],
+        center: [21.007651, 105.828042],
+        zoom: 17,
         geolocate: true,
+        mapControls :true,
+        tilt: 0,
+        mapControlOptions: map4d.ControlOptions.BOTTOM_RIGHT,
         accessKey: "98fd21346d83bee24dc734231f7609c9"
       }
     )
+	
+	map.setSwitchMode(map4d.SwitchMode.Auto)
+	
 </script>
 
 </body>
