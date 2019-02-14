@@ -205,23 +205,23 @@ ILatLng  = LatLng | {lat: number, lng: number} | [number, number]
 - getPreferMinZoom: trả về thông tin mức zoom tối thiểu theo trạng thái map(2D or 3D) và theo chế độ chuyển đổi (Auto2DTo3D, Auto3DTo2D, Auto, Manual)
   - **Ví dụ**:
 
-  - Map đang ở chế độ Manual:   
+  - *Map đang ở chế độ Manual*:   
   Nếu map đang ở 2D: trả về mức zoom tối thiếu khi đang ở chế độ 2D
   Nếu map đang ở 3D: trả về mức zoom tối thiểu khi đang ở chế độ 3D (Vì chế độ này không cho phép chuyển từ 3D xuống 2D) => [ minZoom >= 17 ]
 
-  - Map đang ở chế độ Auto:
+  - *Map đang ở chế độ Auto*:
   Nếu map đang ở chế độ 2D: trả về mức zoom tối thiếu khi đang ở chế độ 2D
   Nếu map đang ở chế độ 2D: trả về mức zoom tối thiếu khi đang ở chế độ 2D
 
-  - Map đang ở chế độ Auto3DTo2D:
+  - *Map đang ở chế độ Auto3DTo2D*:
   Nếu map đang ở chế độ 2D: trả về mức zoom tối thiếu khi đang ở chế độ 2D
   Nếu map đang ở chế độ 3D: trả về mức zoom tối thiều khi đang ở chế độ 2D (Vì chế độ này cho phép chuyển từ 3D xuống 2D)
 
-  - Map đang ở chế độ Auto2DTo3D:
+  - *Map đang ở chế độ Auto2DTo3D*:
   Nếu map đang ở chế độ 2D: trả về mức zoom tối thiếu khi đang ở chế độ 2D
   Nếu map đang ở chế độ 3D: trả về mức zoom tối thiều khi đang ở chế độ 3D (Vì chế độ này không cho phép chuyển từ 3D xuống 2D) => [ minZoom >= 17 ]
 
-  == Chú ý: mở mức zoom >= 17 mới có chế độ 3D và tìm hiểu chi tiết về các chế độ ở phía trên ==
+  > Chú ý: mở mức zoom >= 17 mới có chế độ 3D và tìm hiểu chi tiết về các chế độ ở phía trên ==
 
 ## 8. Thay đổi thời gian của map
 Map 4D SDK cho phép người dùng thiết lập thời gian cho map, dữ liệu 3D và các địa điểm sẽ được lấy theo thời gian người dùng thiết lập, mặc định sẽ lấy thời gian hiện tại.
@@ -281,10 +281,10 @@ map.setWeather(Weather.Rain)
 getWeather(): Weather
 ```
 - **setWeather**: Cài đặt hiệu ứng thời tiết
-  - *Weather.Rain*: Hiệu ứng thời tiết trời đang mưa
-  - *Weather.Snow*: Hiệu ứng thời tiết tuyết đang rơi
-  - *Weather.Sun*: Hiệu ứng thời tiết trời nắng
-  
+  - *Weather.Rain* : Hiệu ứng thời tiết trời đang mưa
+  - *Weather.Snow* : Hiệu ứng thời tiết tuyết đang rơi
+  - *Weather.Sun*  : Hiệu ứng thời tiết trời nắng
+
 - **getWeather**: Trả về thông tin thời tiết hiện tại
 
 License
