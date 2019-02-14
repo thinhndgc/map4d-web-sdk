@@ -206,12 +206,12 @@ ILatLng  = LatLng | {lat: number, lng: number} | [number, number]
   - **Ví dụ**:
 
     - *Map đang ở chế độ Manual*:   
-    <br/>Nếu map đang ở 2D: trả về mức zoom tối thiếu khi đang ở chế độ 2D
+    Nếu map đang ở 2D: trả về mức zoom tối thiếu khi đang ở chế độ 2D
     <br/>Nếu map đang ở 3D: trả về mức zoom tối thiểu khi đang ở chế độ 3D (Vì chế độ này không cho phép chuyển từ 3D xuống 2D) => [ minZoom >= 17 ]
 
     - *Map đang ở chế độ Auto*:
     <br/>Nếu map đang ở chế độ 2D: trả về mức zoom tối thiếu khi đang ở chế độ 2D
-    <br/>Nếu map đang ở chế độ 2D: trả về mức zoom tối thiếu khi đang ở chế độ 2D
+    <br/>Nếu map đang ở chế độ 3D: trả về mức zoom tối thiếu khi đang ở chế độ 2D (Vì chế độ này cho phép chuyển từ 3D xuống 2D)
 
     - *Map đang ở chế độ Auto3DTo2D*:
     <br/>Nếu map đang ở chế độ 2D: trả về mức zoom tối thiếu khi đang ở chế độ 2D
